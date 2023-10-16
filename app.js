@@ -18,27 +18,11 @@ const createPlaces = ({ latitude, longitude }) => [
 
 const models = [
   {
-    url: '#asset-eevee',
+    url: '#asset-SLIM',
     scale: ['0.5', '0.5', '0.5'],
-    info: 'Eevee',
+    info: 'SLIM',
   },
-  {
-    url: '#asset-jolteon',
-    scale: ['0.3', '0.3', '0.3'],
-    info: 'Jolteon',
-  },
-  {
-    url: '#asset-vaporeon',
-    scale: ['0.25', '0.25', '0.25'],
-    info: 'Vaporeon',
-  },
-  {
-    url: '#asset-flareon',
-    scale: ['0.25', '0.25', '0.25'],
-    info: 'Flareon',
-  },
-];
-
+  
 const createEntity = ({ id, location: { latitude, longitude }, model, scale: [x, y, z] }) => {
   const $entity = document.createRange().createContextualFragment(`
     <a-entity
