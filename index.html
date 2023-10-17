@@ -37,6 +37,12 @@
   .ar-text {
     padding: 0 1rem;
   }
+  #custom-ar-button {
+      font-size: 24px;
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
   </style>
 </head>
 <body>
@@ -46,7 +52,9 @@
     <model-viewer class="ar-model" src="model/slim_3Dmodel.glb" ios-src="model/slim_3Dmodel.usdz" auto-rotate camera-controls 
       shadow-intensity = 1
       shadow-softness = 0
-      ar alt="SLIM"></model-viewer>
+      ar alt="SLIM">
+    <button id="custom-ar-button" slot="ar-button">Start AR</button>
+    </model-viewer>
     <figcaption class="ar-caption">&copy; Robert Mirabelle</figcaption>
   </figure>
   <p class="ar-text">小型月面着陸実証機SLIMの3DmodelはJAXA提供</p>
